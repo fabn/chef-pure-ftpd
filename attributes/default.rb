@@ -19,3 +19,6 @@ default[:pure_ftpd][:options][:NoAnonymous] = 'yes'
 default[:pure_ftpd][:options][:PureDB] = '/etc/pure-ftpd/pureftpd.pdb'
 default[:pure_ftpd][:options][:Umask] = '113 002'
 default[:pure_ftpd][:options][:PassivePortRange] = '23800 24820'
+
+# Used in firewall recipe to open ftp port only on certain hosts
+default[:pure_ftpd][:firewall_allow] = nil
