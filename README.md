@@ -1,4 +1,4 @@
-# pure-ftpd cookbook
+# pure-ftpd cookbook [![Build Status](https://travis-ci.org/fabn/chef-pure-ftpd.svg)](https://travis-ci.org/fabn/chef-pure-ftpd)
 
 Install and configure pure-ftpd server with virtual users support.
 
