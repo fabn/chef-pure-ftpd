@@ -20,11 +20,6 @@
 # Install the package
 package 'pure-ftpd'
 
-# Enable the service
-service 'pure-ftpd' do
-  action :enable
-end
-
 # Enable chrooting using template
 cookbook_file '/etc/default/pure-ftpd-common' do
   source 'pure-ftpd-common'
@@ -74,5 +69,5 @@ end
 
 # Restart the server after configuration
 service 'pure-ftpd' do
-  action :restart
+  action [:enable, :restart]
 end
