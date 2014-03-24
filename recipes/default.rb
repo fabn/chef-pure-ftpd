@@ -60,7 +60,7 @@ link '/etc/pure-ftpd/auth/50pure' do
 end
 
 # Delete all builtin configuration directives, see man pure-ftpd-wrapper
-execute 'remove all existing auth methods' do
+execute 'remove all existing configuration options' do
   command 'find /etc/pure-ftpd/conf -type f | xargs rm'
 end
 
